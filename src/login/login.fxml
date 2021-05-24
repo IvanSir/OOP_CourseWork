@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="240.0" style="-fx-background-color: #23e2cc;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.14079999923706055" green="0.8799999952316284" blue="0.7937600016593933" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="360.0" style="-fx-background-color: fff;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color opacity="0.3425605893135071" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="39.0" layoutY="157.0" text="Username" textFill="#308494">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="213.0" text="Password" textFill="#308494">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="157.0" layoutY="160.0" promptText="Username" />
+            <PasswordField fx:id="password" layoutX="157.0" layoutY="216.0" promptText="Password" />
+            <Button fx:id="buttonLog" layoutX="149.0" layoutY="302.0" mnemonicParsing="false" onAction="#Logged" style="-fx-background-color: fff;" text="Log in" textFill="#23e2cc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label fx:id="wrongLogin" layoutX="148.0" layoutY="118.0" textFill="#d72f2f">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="6.0" layoutY="360.0" mnemonicParsing="false" onAction="#goBack" text="Back" textFill="#23e2cc" />
+            <Label layoutX="112.0" layoutY="36.0" style="-fx-background-color: fff;" text="Motel GG">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="cheapPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel.Cheap.CheapController">
+   <children>
+      <AnchorPane layoutY="66.0" prefHeight="334.0" prefWidth="434.0" style="-fx-background-color: fff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane layoutX="12.0" layoutY="259.0" prefHeight="48.0" prefWidth="409.0" style="-fx-background-color: fff;">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <Label fx:id="Cheap1" layoutX="23.0" layoutY="15.0" text="Cheap1" />
+                  <Label fx:id="guestsIn" layoutX="95.0" layoutY="15.0" text="0/3" />
+                  <Button fx:id="buttonCheck1" layoutX="334.0" layoutY="11.0" mnemonicParsing="false" onAction="#checkInRoom" style="-fx-background-color: #23e2cc;" text="Check in">
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </Button>
+                  <Label fx:id="dateIn" layoutX="169.0" layoutY="15.0" />
+                  <Label fx:id="dateOut" layoutX="236.0" layoutY="15.0" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="34.0" layoutY="220.0" text="Name" />
+            <Label layoutX="93.0" layoutY="220.0" text="Capacity" />
+            <Label layoutX="175.0" layoutY="220.0" text="In" />
+            <Label layoutX="244.0" layoutY="220.0" text="Out" />
+            <ImageView fitHeight="162.0" fitWidth="374.0" layoutX="45.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/cheap.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="66.0" prefWidth="600.0" style="-fx-background-color: fff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="246.0" layoutY="19.0" text="Cheap rooms">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #23e2cc;" text="Back" />
+            <Label fx:id="userName" layoutX="431.0" layoutY="20.0" text="Noname" />
+            <Button layoutX="526.0" layoutY="16.0" mnemonicParsing="false" onAction="#logOut" style="-fx-background-color: #23e2cc;" text="Log Out" />
+            <Label layoutX="431.0" layoutY="37.0" text="Money:">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="userMoney" layoutX="465.0" layoutY="37.0" text="0">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="285.0" layoutY="44.0" text="10$" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="487.0" layoutY="99.0" mnemonicParsing="false" onAction="#AddRoom" style="-fx-background-color: #23e2cc;" text="AddRoom" />
+      <Button layoutX="492.0" layoutY="157.0" mnemonicParsing="false" onAction="#AddDay" style="-fx-background-color: #23e2cc;" text="AddDay" />
+   </children>
+</AnchorPane>

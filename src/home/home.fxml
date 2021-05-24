@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.HomeController">
+    <children>
+      <AnchorPane prefHeight="400.0" prefWidth="67.0" style="-fx-background-color: #23e2cc;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+        <AnchorPane layoutX="532.0" prefHeight="400.0" prefWidth="67.0" style="-fx-background-color: #23e2cc;">
+            <effect>
+                <DropShadow>
+                    <color>
+                        <Color opacity="0.3356401324272156" />
+                    </color>
+                </DropShadow>
+            </effect></AnchorPane>
+        <AnchorPane prefHeight="78.0" prefWidth="600.0" style="-fx-background-color: fff;">
+            <effect>
+                <DropShadow>
+                    <color>
+                        <Color opacity="0.4982698857784271" />
+                    </color>
+                </DropShadow>
+            </effect>
+            <children>
+                <Label layoutX="8.0" layoutY="14.0" prefHeight="50.0" prefWidth="218.0" text="Motel GG" textAlignment="CENTER">
+                    <font>
+                        <Font name="Century" size="33.0" />
+                    </font>
+                </Label>
+            <Button fx:id="buttonLog" layoutX="345.0" layoutY="19.0" mnemonicParsing="false" onAction="#Logging" style="-fx-background-color: fff;" text="Log In">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Button fx:id="buttonReg" layoutX="464.0" layoutY="19.0" mnemonicParsing="false" onAction="#Signing" style="-fx-background-color: fff;" text="Sign up">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+      <TextArea editable="false" layoutX="74.0" layoutY="78.0" prefHeight="322.0" prefWidth="458.0" style="-fx-background-color: fff;" text="Супер классный отель&#10;для состоятельных и уважаемых людей.&#10;&#10;Три вида номеров&#10;- Дешевые&#10;- Обычные&#10;- Делюкс&#10;&#10;Если у вас есть аккаунт, нажмите на кнопку Log In сверху справа,&#10;&#10;В ином случае, кнопка Sign up ждет вас.&#10;" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.RegisterController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="124.0" style="-fx-background-color: #23e2cc;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="11.0" layoutY="14.0" prefHeight="32.0" prefWidth="101.0" text="Registration">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="370.0" style="-fx-background-color: fff;" BorderPane.alignment="CENTER">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label layoutX="20.0" layoutY="111.0" text="Name*" />
+            <Label layoutX="20.0" layoutY="162.0" text="Email*" />
+            <Label layoutX="255.0" layoutY="219.0" text="Money*" />
+            <Label layoutX="20.0" layoutY="219.0" text="Age*" />
+            <Label layoutX="255.0" layoutY="111.0" text="Surname" />
+            <Label layoutX="255.0" layoutY="162.0" text="Tel." />
+            <Label layoutX="16.0" layoutY="274.0" text="Password*" />
+            <TextField fx:id="name" layoutX="81.0" layoutY="107.0" promptText="ivan" />
+            <TextField fx:id="userName" layoutX="81.0" layoutY="158.0" promptText="email" />
+            <TextField fx:id="age" layoutX="81.0" layoutY="215.0" promptText="19" />
+            <TextField fx:id="password" layoutX="81.0" layoutY="270.0" promptText="12345678" />
+            <TextField fx:id="surName" layoutX="313.0" layoutY="107.0" promptText="ilyushchenka" />
+            <TextField fx:id="number" layoutX="313.0" layoutY="158.0" promptText="+375(29)8724024" />
+            <TextField fx:id="money" layoutX="313.0" layoutY="215.0" promptText="1000" />
+            <Button layoutX="342.0" layoutY="354.0" mnemonicParsing="false" onAction="#Signed" style="-fx-background-color: fff;" text="Sign up" textFill="#23e2cc">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button layoutX="15.0" layoutY="357.0" mnemonicParsing="false" onAction="#goBack" text="Back" textFill="#23e2cc" />
+            <Label fx:id="invalidData" layoutX="224.0" layoutY="69.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
